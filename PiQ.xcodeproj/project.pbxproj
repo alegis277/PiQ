@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC5AFF64290E117500685F0B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AFF63290E117500685F0B /* MainView.swift */; };
+		FC5AFF64290E117500685F0B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AFF63290E117500685F0B /* MainViewController.swift */; };
+		FC5AFF68290E2ED100685F0B /* PiBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AFF67290E2ED100685F0B /* PiBrain.swift */; };
+		FC5AFF6A290E359700685F0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AFF69290E359700685F0B /* Constants.swift */; };
 		FC7D3A37290E0AF80029D2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D3A36290E0AF80029D2B4 /* AppDelegate.swift */; };
 		FC7D3A39290E0AF80029D2B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D3A38290E0AF80029D2B4 /* SceneDelegate.swift */; };
 		FC7D3A3E290E0AF80029D2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7D3A3C290E0AF80029D2B4 /* Main.storyboard */; };
@@ -16,7 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC5AFF63290E117500685F0B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FC5AFF63290E117500685F0B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FC5AFF67290E2ED100685F0B /* PiBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiBrain.swift; sourceTree = "<group>"; };
+		FC5AFF69290E359700685F0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FC7D3A33290E0AF80029D2B4 /* PiQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7D3A36290E0AF80029D2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7D3A38290E0AF80029D2B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC5AFF65290E2E3B00685F0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D3A3C290E0AF80029D2B4 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC5AFF66290E2E8E00685F0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC5AFF67290E2ED100685F0B /* PiBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FC7D3A2A290E0AF80029D2B4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,21 +78,23 @@
 			children = (
 				FC7D3A36290E0AF80029D2B4 /* AppDelegate.swift */,
 				FC7D3A38290E0AF80029D2B4 /* SceneDelegate.swift */,
-				FCACF496290E10C200087663 /* ViewControllers */,
-				FC7D3A3C290E0AF80029D2B4 /* Main.storyboard */,
+				FC5AFF66290E2E8E00685F0B /* Models */,
+				FCACF496290E10C200087663 /* Controllers */,
+				FC5AFF65290E2E3B00685F0B /* Views */,
 				FC7D3A3F290E0AF90029D2B4 /* Assets.xcassets */,
 				FC7D3A41290E0AF90029D2B4 /* LaunchScreen.storyboard */,
 				FC7D3A44290E0AF90029D2B4 /* Info.plist */,
+				FC5AFF69290E359700685F0B /* Constants.swift */,
 			);
 			path = PiQ;
 			sourceTree = "<group>";
 		};
-		FCACF496290E10C200087663 /* ViewControllers */ = {
+		FCACF496290E10C200087663 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC5AFF63290E117500685F0B /* MainView.swift */,
+				FC5AFF63290E117500685F0B /* MainViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5AFF64290E117500685F0B /* MainView.swift in Sources */,
+				FC5AFF6A290E359700685F0B /* Constants.swift in Sources */,
+				FC5AFF64290E117500685F0B /* MainViewController.swift in Sources */,
+				FC5AFF68290E2ED100685F0B /* PiBrain.swift in Sources */,
 				FC7D3A37290E0AF80029D2B4 /* AppDelegate.swift in Sources */,
 				FC7D3A39290E0AF80029D2B4 /* SceneDelegate.swift in Sources */,
 			);
